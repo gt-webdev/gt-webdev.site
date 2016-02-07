@@ -1,7 +1,10 @@
 [
   {
-    "route": "/",
-    "title": "gt-webdev",
-    "page": "home"
+    "path": "/",
+    "title": "gt-webdev"
+  },
+  {
+    "path": "/events",
+    "title": "gt-webdev events"
   }
 ]

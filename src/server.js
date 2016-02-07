@@ -1,7 +1,9 @@
 import express from 'express';
 import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import routes from './routes.json'
+import { renderToString } from 'react-dom/server'
+import { match, RoutingContext } from 'react-router'
+import router from './router.js'    // For rendering body
+import routes from './routes.json'  // For server-side rendering and rendering head
 
 const app = express();
 
@@ -10,12 +12,20 @@ app.set('view engine', 'ejs');
 
 // Add handlers for all pages in routes.json
 routes.forEach(route => {
-  var Page = require('./pages/' + route.page);
-
-  app.get(route.route, function(req, res) {
-    res.render('page', {
-      title: route.title,
-      body: ReactDOMServer.renderToString(<Page />)
+  app.get(route.path, function(req, res) {
+    match({ routes: router, location: req.path }, (error, redirectLocation, renderProps) => {
+      if (error) {
+        res.status(500).send(error.message)
+      } else if (redirectLocation) {
+        res.redirect(302, redirectLocation.pathname + redirectLocation.search)
+      } else if (renderProps) {
+        res.render('page', {
+          title: route.title,
+          body: renderToString(<RoutingContext {...renderProps} />)
+        });
+      } else {
+        res.status(404).send('Not found')
+      }
     });
   });
 });
