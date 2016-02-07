@@ -3,7 +3,7 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var babel = require("gulp-babel");
 var webpack = require('webpack-stream');
-var exec = require('child_process').exec;
+var spawn = require('child_process').spawn;
 var server_process = null;
 
 // Clean dist and dist-server
@@ -39,7 +39,7 @@ gulp.task('watch', function() {
 
   gulp.watch("src/**/*.js", ['bundle'])
     .on('change', changeLogger);
-  gulp.watch(["src/routes.json", "src/views/**/*.ejs"], ['copy-uncompiled-files'])
+  gulp.watch(["src/routes.json", "src/router.js", "src/views/**/*.ejs"], ['copy-uncompiled-files'])
     .on('change', changeLogger);
 });
 
@@ -54,19 +54,27 @@ gulp.task("build", function(callback) {
 // Serve and watch
 gulp.task('serve', ['watch'], function() {
   var runServer = function() {
-    return exec('node server.js', {
+    return spawn('node', ['server.js'], {
       cwd: "dist-server"
     });
   };
 
+  var log = function(data) {
+    process.stdout.write("" + data);  // Does not include a trailing newline
+  }
+
   // Run server
   server_process = runServer();
+  server_process.stdout.on('data', log);
+  server_process.stderr.on('data', log);
 
   // Restart server when server.js is modified and transpiled
   gulp.watch('dist-server/server.js')
     .on('change', function() {
       server_process.kill();
       server_process = runServer();
+      server_process.stdout.on('data', log);
+      server_process.stderr.on('data', log);
       console.log("Server restarted!");
     });
 });
