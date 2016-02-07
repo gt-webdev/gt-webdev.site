@@ -39,7 +39,7 @@ gulp.task('watch', function() {
 
   gulp.watch("src/**/*.js", ['bundle'])
     .on('change', changeLogger);
-  gulp.watch(["src/routes.json", "src/router.js", "src/views/**/*.ejs"], ['copy-uncompiled-files'])
+  gulp.watch(["src/routes.json", "src/router.js", "src/data/**/*.js", "src/views/**/*.ejs"], ['copy-uncompiled-files'])
     .on('change', changeLogger);
 });
 
