@@ -3,6 +3,7 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var babel = require("gulp-babel");
 var webpack = require('webpack-stream');
+var sass = require('gulp-sass');
 var spawn = require('child_process').spawn;
 var server_process = null;
 
@@ -24,11 +25,18 @@ gulp.task('transpile', function() {
     .pipe(gulp.dest("dist-server"));
 });
 
-// Bundle files in dist-server and save in dist
-gulp.task('bundle', ['transpile'], function() {
+// Bundle JS files in dist-server and save in dist
+gulp.task('bundle-js', ['transpile'], function() {
   return gulp.src('dist-server/pages/home.js')
     .pipe(webpack( require('./webpack.config.js') ))
     .pipe(gulp.dest('.'));
+});
+
+// Bundle SASS/CSS files and save in dist
+gulp.task('bundle-css', function(){
+    return gulp.src('src/scss/styles.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('dist'));
 });
 
 // Watch files
@@ -37,7 +45,11 @@ gulp.task('watch', function() {
     console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
   };
 
-  gulp.watch("src/**/*.js", ['bundle'])
+  gulp.watch("src/**/*.js", ['bundle-js'])
+    .on('change', changeLogger);
+  gulp.watch("src/**/*.css", ['bundle-css'])
+    .on('change', changeLogger);
+  gulp.watch("src/**/*.scss", ['bundle-css'])
     .on('change', changeLogger);
   gulp.watch(["src/routes.json", "src/router.js", "src/data/**/*.js", "src/views/**/*.ejs"], ['copy-uncompiled-files'])
     .on('change', changeLogger);
@@ -47,7 +59,8 @@ gulp.task('watch', function() {
 gulp.task("build", function(callback) {
   runSequence('clean',
     'copy-uncompiled-files',
-    'bundle',
+    'bundle-js',
+    'bundle-css',
     callback);
 });
 

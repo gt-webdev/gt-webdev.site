@@ -6,8 +6,8 @@ class Events extends React.Component {
   render() {
     return (
       <div>
-        <h1>gt-webdev events</h1>
         <Navbar />
+        <h1>gt-webdev events</h1>
         <li>
           {data.map(e => e.title)}
         </li>

@@ -5,8 +5,8 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <h1>gt-webdev</h1>
         <Navbar />
+        <h1>gt-webdev</h1>
       </div>
     );
   }
