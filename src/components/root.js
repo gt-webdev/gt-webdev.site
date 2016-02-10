@@ -1,13 +1,13 @@
 import React from 'react';
-import {Link} from 'react-router'
 import Menu from './menu'
-
+import Footer from './footer'
 class Root extends React.Component {
   render() {
     return (
-      <div>
+      <div className={'page-' + (this.props.location.pathname.replace(/^\/+/,'').replace(/\//g,'-') || 'home')}>
         <Menu />
         {this.props.children}
+        <Footer />
       </div>
     );
   }

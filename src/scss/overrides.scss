@@ -6,11 +6,11 @@ body{
 $logo-glow-size:3px;
 .webdev-logo{
   font-family: $logo-font;
-  color:#fff;
+  color:#EEEEEE;
   font-weight:300;
   
   .navbar-brand a:hover &{
-    text-shadow:0 0 $logo-glow-size #fff;
+    text-shadow:0 0 $logo-glow-size #EEEEEE;
   }
 }
 .webdev-logo-gt,
@@ -22,19 +22,16 @@ $logo-glow-size:3px;
   }
 }
 
+.webdev-logo-webdev{
+  margin-right:7px;
+}
+
 .webdev-logo-hyphen{
-  color: #eee;
+  color: #FFE08B;
   font-size: 75%;
   
   .navbar-brand a:hover &{
-    text-shadow:0 0 $logo-glow-size #eee;
-  }
-}
-
-.logo-2{
-  .webdev-logo-hyphen,
-  .webdev-logo-webdev{
-    display:none;
+    text-shadow:0 0 $logo-glow-size #FFE08B;
   }
 }
 
@@ -59,8 +56,35 @@ $logo-glow-size:3px;
   }
 }
 
+#footer{
+  background:$navbar-inverse-bg;
+}
+
 .navbar{
   margin-bottom:0;
+}
+
+$footer-height:40px;
+#footer{
+  padding:10px 0;
+  text-align:center;
+  height:$footer-height;
+  a{
+    color:#fff;
+  }
+}
+
+.page-home{
+  .navbar-inverse,
+  #footer{
+    background:transparentize($navbar-inverse-bg, .15);
+    position:absolute;
+    width:100%;
+  }
+  
+  #footer{
+    margin-top:-$footer-height;
+  }
 }
 
 #content{
@@ -68,6 +92,8 @@ $logo-glow-size:3px;
   background:#fff;
 }
 .home{
+  
+  
   .next-event{
     padding:80px 0;
     text-align:center;
@@ -78,8 +104,12 @@ $logo-glow-size:3px;
     background: radial-gradient(ellipse at top center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url(/img/home-event-bg.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background-color:#000;
     background-size:cover;
-    min-height:calc(100vh - 58px);
+    min-height:100vh;
   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     .event-title{
       color:#fff;
       font-size:65px;
@@ -87,6 +117,10 @@ $logo-glow-size:3px;
       max-width:750px;
       margin:0 auto;
       text-shadow:0 0 20px #000, 0 0 15px #000;
+      
+      @media (max-width:$screen-xs-max){
+        font-size:40px;
+      }
     }
     
     .event-details{
