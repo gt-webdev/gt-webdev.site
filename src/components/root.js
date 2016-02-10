@@ -1,12 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router'
-import Navbar from './navbar'
+import Menu from './menu'
 
 class Root extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Menu />
         {this.props.children}
       </div>
     );

@@ -35,7 +35,7 @@ gulp.task('bundle-js', ['transpile'], function() {
 // Bundle SASS/CSS files and save in dist
 gulp.task('bundle-css', function(){
     return gulp.src('src/scss/styles.scss')
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('dist'));
 });
 
