@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import {Link} from 'react-router'
 import {IndexLinkContainer, LinkContainer} from 'react-router-bootstrap'
 var Navbar = require("react-bootstrap/lib/Navbar");
@@ -29,6 +30,20 @@ class Menu extends React.Component {
         </Navbar.Collapse>
       </Navbar>
     );
+  }
+  componentDidMount() {
+    // Collapse the mobile navbar on click
+    const navBar = ReactDOM.findDOMNode(this);
+    const collapsibleNav = navBar.querySelector('div.navbar-collapse');
+    const btnToggle = navBar.querySelector('button.navbar-toggle');
+
+    navBar.addEventListener('click', (evt) => {
+      if (evt.target.tagName !== 'A' || evt.target.classList.contains('dropdown-toggle') || ! collapsibleNav.classList.contains('in')) {
+        return;
+      }
+
+      btnToggle.click();
+    }, false);
   }
 }
 
