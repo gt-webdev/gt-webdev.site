@@ -1,15 +1,18 @@
 import React from 'react';
 import {render} from 'react-dom'
-import { Router, Route, Link } from 'react-router'
+import { Router, Route, IndexRoute, Link } from 'react-router'
 import createBrowserHistory from 'history/lib/createBrowserHistory'
+import Root from './components/root'
 import Home from './pages/home'
 import Events from './pages/events'
 
 // Used for client-side and server-side rendering
 var router = (
   <Router history={typeof document !== "undefined" ? createBrowserHistory() : null}>
-    <Route path="/" component={Home} />
-    <Route path="events" component={Events} />
+    <Route path="/" component={Root}>
+      <IndexRoute component={Home} />
+      <Route path="events" component={Events} />
+    </Route>
   </Router>
 );
 

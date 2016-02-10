@@ -1,7 +1,7 @@
 import express from 'express';
 import React from 'react';
 import { renderToString } from 'react-dom/server'
-import { match, RoutingContext } from 'react-router'
+import { match, RouterContext } from 'react-router'
 import router from './router.js'    // For rendering body
 import routes from './routes.json'  // For server-side rendering and rendering head
 
@@ -21,7 +21,7 @@ routes.forEach(route => {
       } else if (renderProps) {
         res.render('page', {
           title: route.title,
-          body: renderToString(<RoutingContext {...renderProps} />)
+          body: renderToString(<RouterContext {...renderProps} />)
         });
       } else {
         res.status(404).send('Not found')

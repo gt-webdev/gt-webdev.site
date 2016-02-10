@@ -1,0 +1,109 @@
+// Logo
+body{
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSI+CjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0iI2ZmZmZmZiI+PC9yZWN0Pgo8Y2lyY2xlIGN4PSIzIiBjeT0iNC4zIiByPSIwLjUiIGZpbGw9IiM5OTk5OTkiPjwvY2lyY2xlPgo8L3N2Zz4=");
+}
+
+$logo-glow-size:3px;
+.webdev-logo{
+  font-family: $logo-font;
+  color:#fff;
+  font-weight:300;
+  
+  .navbar-brand a:hover &{
+    text-shadow:0 0 $logo-glow-size #fff;
+  }
+}
+.webdev-logo-gt,
+.webdev-logo-webdev{
+  color: $brand-primary;
+  
+  .navbar-brand a:hover &{
+    text-shadow:0 0 $logo-glow-size $brand-primary;
+  }
+}
+
+.webdev-logo-hyphen{
+  color: #eee;
+  font-size: 75%;
+  
+  .navbar-brand a:hover &{
+    text-shadow:0 0 $logo-glow-size #eee;
+  }
+}
+
+.logo-2{
+  .webdev-logo-hyphen,
+  .webdev-logo-webdev{
+    display:none;
+  }
+}
+
+.navbar{
+  font-family:$headings-font-family;
+}
+
+.navbar-nav li>a{
+  text-transform:lowercase;
+  font-size:20px;
+  padding-top:18px;
+  padding-bottom:18px;
+  font-weight:200;
+}
+
+.navbar-brand{
+  font-size: 32px;
+  padding: 15px;
+  height: 56px;
+  a{
+    text-decoration:none!important;
+  }
+}
+
+.navbar{
+  margin-bottom:0;
+}
+
+#content{
+  padding-top:15px;
+  background:#fff;
+}
+.home{
+  .next-event{
+    padding:80px 0;
+    text-align:center;
+    background:url(/img/home-event-bg.jpg) top center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+1,0.65+99 */
+    background: -moz-radial-gradient(top center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url(/img/home-event-bg.jpg); /* FF3.6-15 */
+    background: -webkit-radial-gradient(top center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url(/img/home-event-bg.jpg); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at top center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url(/img/home-event-bg.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-color:#000;
+    background-size:cover;
+    min-height:calc(100vh - 58px);
+  
+    .event-title{
+      color:#fff;
+      font-size:65px;
+      font-weight:300;
+      max-width:750px;
+      margin:0 auto;
+      text-shadow:0 0 20px #000, 0 0 15px #000;
+    }
+    
+    .event-details{
+      color:#fff;
+      margin:10px 0 30px;
+      text-shadow:0 0 2px #000;
+      font-size: 140%;
+      font-weight: 300;
+    }
+    
+    .event-rsvp{
+      padding:10px 50px;
+    }
+  }
+  
+  .next-event-label{
+    color:#888;
+    font-size:20px;
+  }
+}
