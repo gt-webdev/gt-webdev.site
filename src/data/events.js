@@ -1,8 +1,8 @@
 module.exports = [
   {
     "title": "Why web development is the best thing ever",
-    "date": "Tuesday, Jan 19",
-    "time": "6:00-8:00pm",
+    "start": "Tue, 19 Jan 2016 18:00:00 -0500",
+    "end": "Tue, 19 Jan 2016 20:00:00 -0500",
     "location": "CCB 102",
     "rsvpLink": "https://facebook.com/"
   },
