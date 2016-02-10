@@ -6,7 +6,6 @@ import Root from './components/root'
 import Home from './pages/home'
 import Events from './pages/events'
 import Event from './pages/event'
-<<<<<<< HEAD
 import About from './pages/about'
 import Learn from './pages/learn'
 import Contact from './pages/contact'
