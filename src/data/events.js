@@ -1,13 +1,16 @@
 module.exports = [
   {
-    "title": "Why web development is the best thing ever",
-    "start": "Tue, 19 Jan 2016 18:00:00 -0500",
-    "end": "Tue, 19 Jan 2016 20:00:00 -0500",
+    "title": "Fundamentals of React",
+    "start": new Date("Tue Feb 23 2016 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Tue Feb 23 2016 20:00:00 GMT-0500 (EST)"),
     "location": "CCB 102",
     "rsvpLink": "https://facebook.com/"
   },
-    {
-    "title": "Hellow Jackets2",
-    "date": "Tuesday"
+  {
+    "title": "Why web development is the best thing ever",
+    "start": new Date("Tue Feb 16 2016 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Tue Feb 16 2016 20:00:00 GMT-0500 (EST)"),
+    "location": "CCB 102",
+    "rsvpLink": "https://facebook.com/"
   }
 ];
