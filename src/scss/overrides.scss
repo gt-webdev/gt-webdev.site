@@ -12,6 +12,10 @@ $logo-glow-size:3px;
   .navbar-brand a:hover &{
     text-shadow:0 0 $logo-glow-size #EEEEEE;
   }
+  
+  @media (max-width:$screen-xs-max){
+    font-size:25px;
+  }
 }
 .webdev-logo-gt,
 .webdev-logo-webdev{
@@ -51,6 +55,11 @@ $logo-glow-size:3px;
   font-size: 32px;
   padding: 15px;
   height: 56px;
+  
+  @media (max-width:$screen-xs-max){
+    padding:13px;
+  }
+  
   a{
     text-decoration:none!important;
   }
