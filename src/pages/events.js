@@ -7,9 +7,6 @@ import {nextEvent, upcomingEvents} from '../data/events.js'
 class Events extends React.Component {
 
   render() {
-    var startDateTime = new Date(nextEvent.start);
-    var endDateTime = new Date(nextEvent.end);
-
     return (
       <div>
         <div className="next-event">
@@ -17,16 +14,32 @@ class Events extends React.Component {
             <div className="next-event-label">next meeting</div>
             <h2 className="event-title">{nextEvent.title}</h2>
             <div className="event-details">
-              <span className="event-date">{moment(startDateTime).format("dddd, MMM Do")}</span>
+              <span className="event-date">{moment(nextEvent.start).format("dddd, MMM Do")}</span>
               <br/>
-              <span className="event-time">{moment(startDateTime).format("h:mma") + " - " + moment(endDateTime).format("h:mma")}</span> <span className="event-location">{nextEvent.location}</span>
+              <span className="event-time">{moment(nextEvent.start).format("h:mma") + " - " + moment(nextEvent.end).format("h:mma")}</span> <span className="event-location">{nextEvent.location}</span>
             </div>
             <Button className="event-rsvp" bsStyle="primary" bsSize="large" href={nextEvent.rsvpLink}>RSVP</Button>
           </div>
         </div>
         <div className="container" id="upcoming-events">
           <h2>Upcoming Events</h2>
-          {upcomingEvents.map(e => <p>{e.title}</p>)}
+          {upcomingEvents.map(e => (
+              <div className="upcoming-event container">
+                <div className="row">
+                  <div className="col-sm-2">
+                    <div>
+                      <img className="event-image" src={e.image || "http://placehold.it/100x100"} />
+                    </div>
+                    <div className="event-date">{moment(e.start).format("MMM D")}</div>
+                  </div>
+                  <div className="col-sm-10">
+                    <h3 className="event-title">{e.title}</h3>
+                    <p>Lorem ipsum dolor mate Lorem ipsum dolor mate Lorem ipsum dolor mate Lorem ipsum dolor mate Lorem ipsum dolor mate Lorem ipsum dolor mate</p>
+                  </div>
+                </div>
+              </div>
+            )
+          )}
         </div>
       </div>
     );
