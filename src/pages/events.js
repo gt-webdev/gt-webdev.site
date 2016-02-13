@@ -1,23 +1,8 @@
 import React from 'react';
 import {Button} from 'react-bootstrap'
 import moment from 'moment'
-import eventsData from '../data/events.js'
-import _ from 'lodash'
+import {nextEvent, upcomingEvents} from '../data/events.js'
 
-const nextEvent = (() => {
-  const now = new Date();
-  console.log(eventsData);
-  return _.reduce(eventsData, (result, e) => {
-    return e.end > now && e.end < result.end ? e : result;
-  });
-})();
-
-const upcomingEvents = (() => {
-  const now = new Date();
-  return _.filter(eventsData, (e) => {
-    return e.end > now && e.end != nextEvent.end;
-  });
-})();
 
 class Events extends React.Component {
 

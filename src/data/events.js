@@ -1,4 +1,6 @@
-module.exports = [
+import _ from 'lodash'
+
+const events = [
   {
     "title": "Fundamentals of React",
     "start": new Date("Tue Feb 23 2016 18:00:00 GMT-0500 (EST)"),
@@ -14,3 +16,23 @@ module.exports = [
     "rsvpLink": "https://facebook.com/"
   }
 ];
+
+const nextEvent = (() => {
+  const now = new Date();
+  return _.reduce(events, (result, e) => {
+    return e.end > now && e.end < result.end ? e : result;
+  });
+})();
+
+const upcomingEvents = (() => {
+  const now = new Date();
+  return _.filter(events, (e) => {
+    return e.end > now && e.end != nextEvent.end;
+  });
+})();
+
+module.exports = {
+  events,
+  nextEvent,
+  upcomingEvents
+}
