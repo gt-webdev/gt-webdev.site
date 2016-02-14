@@ -2,6 +2,7 @@ import React from 'react';
 import {Button} from 'react-bootstrap'
 import moment from 'moment'
 import {nextEvent, upcomingEvents} from '../data/events.js'
+import {defaultIcon} from '../data/defaults.js'
 
 
 class Events extends React.Component {
@@ -28,7 +29,7 @@ class Events extends React.Component {
                 <div className="row">
                   <div className="col-sm-2">
                     <div>
-                      <img className="event-image" src={e.image || "http://placehold.it/100x100"} />
+                      <img className="event-image" src={e.image || defaultIcon} />
                     </div>
                     <div className="event-date">{moment(e.start).format("MMM D")}</div>
                   </div>
