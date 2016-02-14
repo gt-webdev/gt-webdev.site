@@ -37,6 +37,8 @@ const upcomingEvents = (() => {
   const now = new Date();
   return _.filter(events, (e) => {
     return e.end > now && e.end != nextEvent.end;
+  }).sort((a, b)  => {
+    return a.start < b.start ? -1 : 1;
   });
 })();
 
