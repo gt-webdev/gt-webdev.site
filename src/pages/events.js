@@ -19,6 +19,7 @@ class Events extends React.Component {
               <br/>
               <span className="event-time">{moment(nextEvent.start).format("h:mma") + " - " + moment(nextEvent.end).format("h:mma")}</span> <span className="event-location">{nextEvent.location}</span>
             </div>
+            <p className="event-description">{nextEvent.description}</p>
             <Button className="event-rsvp" bsStyle="primary" bsSize="large" href={nextEvent.rsvpLink}>RSVP</Button>
           </div>
         </div>
@@ -35,7 +36,7 @@ class Events extends React.Component {
                   </div>
                   <div className="col-sm-10">
                     <h3 className="event-title">{e.title}</h3>
-                    <p>Lorem ipsum dolor mate Lorem ipsum dolor mate Lorem ipsum dolor mate Lorem ipsum dolor mate Lorem ipsum dolor mate Lorem ipsum dolor mate</p>
+                    <p>{e.description}</p>
                   </div>
                 </div>
               </div>
