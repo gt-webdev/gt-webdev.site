@@ -1,8 +1,3 @@
-// Logo
-body{
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSI+CjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0iI2ZmZmZmZiI+PC9yZWN0Pgo8Y2lyY2xlIGN4PSIzIiBjeT0iNC4zIiByPSIwLjUiIGZpbGw9IiM5OTk5OTkiPjwvY2lyY2xlPgo8L3N2Zz4=");
-}
-
 $logo-glow-size:3px;
 .webdev-logo{
   font-family: $logo-font;
@@ -209,6 +204,88 @@ $footer-height:40px;
       .event-title {
         margin-top: 0;
       }
+    }
+  }
+}
+
+.page-about {
+  #about-jumbotron {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), url("img/about-background.jpg");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    height: 50vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  #about-organization h2 {
+    margin-top: 0;
+  }
+  #about-organization p {
+    font-size: 1.5em;
+    line-height: 1.8em;
+  }
+  #about-organization img {
+    width: 100%;
+  }
+  .center-heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .person {
+    border: 2px solid #ccc;
+    overflow: auto;
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .profile-photo {
+      float: left;
+      margin: 10px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-sizing: content-box;
+      width: 100px;
+      height: 100px;
+    }
+
+    .main {
+      color: white;
+      height: 130px;
+      box-sizing: border-box;
+    }
+
+    .name-area {
+      background-color: #333;
+      padding: 10px;
+      height: 60%;
+      box-sizing: border-box;
+    }
+
+    .name-area h3 {
+      margin-bottom: 5px;
+    }
+
+    .links-area {
+      background-color: #515151;
+      height: 40%;
+      line-height: 72px;
+    }
+
+    .links-area img {
+      vertical-align: baseline;
+    }
+
+    .description-area {
+      padding: 5px;
     }
   }
 }
