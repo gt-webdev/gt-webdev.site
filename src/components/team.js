@@ -27,11 +27,9 @@ class Team extends React.Component {
         var isGraduate = typeof officer.graduate != 'undefined';
         return showGraduates ? isGraduate : !isGraduate;
       })
-      .chunk(3)
-      .map(function(threeOfficers) {
-        var officerComponents = threeOfficers.map((officer) => {
+      .map(function(officer) {
           return (
-            <div className="col-md-4">
+            <div className="col-md-4 col-sm-6 col-xs-12">
               <div className="person">
                 <div className="main">
                   <img className="profile-photo" src={officer.image} alt={officer.name + "'s photo"} />
@@ -49,19 +47,12 @@ class Team extends React.Component {
                 </div>
               </div>
             </div>
-          )
-        });
-
-        return (
-          <div className="row">
-            {officerComponents}
-          </div>
-        );
+          );
       })
       .toArray()
       .value();
 
-    return <div>{rows}</div>;
+    return <div className="row">{rows}</div>;
   }
 }
 
