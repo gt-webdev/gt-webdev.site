@@ -1,4 +1,5 @@
 import React from 'react';
+import Team from '../components/team.js'
 
 class About extends React.Component {
   render() {
@@ -23,48 +24,9 @@ class About extends React.Component {
             </div>
           </div>
           <h2 className="center-heading">Team</h2>
-          <div className="row">
-            <div className="col-sm-4">
-              <div className="person">
-                <div className="main">
-                  <img className="profile-photo" src="img/profiles/saleh.png" alt="Saleh's photo" />
-                  <div className="name-area">
-                    <h3>Saleh Hamadeh</h3>
-                    <h4>CS - Devices & Mod/Sim</h4>
-                  </div>
-                  <div className="links-area">
-                    <img src="http://placehold.it/32x32" alt="" />
-                    <img src="http://placehold.it/32x32" alt="" />
-                    <img src="http://placehold.it/32x32" alt="" />
-                  </div>
-                </div>
-                
-                <div className="description-area">
-                  <p>Saleh is very social and enjoys having thoughtful conversations about philosophy, economics, and code.</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4">
-              <div className="person">
-                <div className="main">
-                  <img className="profile-photo" src="http://placehold.it/100x100" alt="" />
-                  <div className="name-area">
-                    <h3>Saleh Hamadeh</h3>
-                    <h4>CS - Devices & Mod/Sim</h4>
-                  </div>
-                  <div className="links-area">
-                    <img src="http://placehold.it/32x32" alt="" />
-                    <img src="http://placehold.it/32x32" alt="" />
-                    <img src="http://placehold.it/32x32" alt="" />
-                  </div>
-                </div>
-                
-                <div className="description-area">
-                  <p>Saleh is very social and enjoys having thoughtful conversations about philosophy, economics, and code.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Team />
+          <h2 className="center-heading">Graduates</h2>
+          <Team graduates="true" />
         </div>
       </div>
     );
