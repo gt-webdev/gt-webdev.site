@@ -239,8 +239,9 @@ $footer-height:40px;
   }
 
   .person {
+    position: relative;
     border: 1px solid #ccc;
-    overflow: auto;
+    overflow: hidden;
     margin-bottom: 30px;
 
     * {
@@ -269,10 +270,28 @@ $footer-height:40px;
       padding: 10px;
       height: 60%;
       box-sizing: border-box;
-    }
 
-    .name-area h3 {
-      margin-bottom: 5px;
+      h3 {
+        margin-bottom: 5px;
+      }
+
+      .graduation-year {
+        position: absolute;;
+        right: -15px;
+        top: 6px;
+        background-color: #de8b00;
+        padding: 0 14px;
+        /* Safari */
+        -webkit-transform: rotate(45deg);
+        /* Firefox */
+        -moz-transform: rotate(45deg);
+        /* IE */
+        -ms-transform: rotate(45deg);
+        /* Opera */
+        -o-transform: rotate(45deg);
+        /* CSS3 */
+        transform: rotate(45deg);
+      }
     }
 
     .links-area {

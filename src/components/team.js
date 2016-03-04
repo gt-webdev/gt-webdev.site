@@ -36,6 +36,10 @@ class Team extends React.Component {
                   <div className="name-area">
                     <h3>{officer.name}</h3>
                     <h4>{officer.major}</h4>
+                    {showGraduates ?
+                      <div className="graduation-year">{officer.graduate}</div>
+                      : ""
+                    }
                   </div>
                   <div className="links-area">
                     {getSocialIcons(officer)}
