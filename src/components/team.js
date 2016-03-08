@@ -4,7 +4,7 @@ import _ from 'lodash';
 import officers from '../data/officers.js'
 
 function getSocialIcons(officer) {
-  return _.chain(['website', 'twitter', 'github', 'linkedin'])
+  return _.chain(['website', 'facebook', 'twitter', 'github', 'linkedin'])
     .filter((site) => {
       return typeof officer[site] != 'undefined';
     })
