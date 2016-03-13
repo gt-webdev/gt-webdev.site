@@ -5,7 +5,7 @@ class About extends React.Component {
   render() {
     return (
       <div className="about">
-        <div id="about-jumbotron" className="jumbotron">
+        <div id="about-jumbotron" className="jumbotron" data-parallax-speed="40">
           <h1>About Us</h1>
         </div>
         <div className="container">

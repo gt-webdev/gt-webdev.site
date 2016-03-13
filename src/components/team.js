@@ -4,14 +4,24 @@ import _ from 'lodash';
 import officers from '../data/officers.js'
 
 function getSocialIcons(officer) {
-  return _.chain(['website', 'facebook', 'twitter', 'github', 'linkedin'])
+  return _.chain(['website', 'facebook', 'twitter', 'github', 'linkedin', 'stackoverflow'])
     .filter((site) => {
       return typeof officer[site] != 'undefined';
     })
     .map((site) => {
+      var icons = {
+        stackoverflow:'stack-overflow',
+        twitter:'twitter',
+        facebook:'facebook',
+        linkedin:'linkedin',
+        github:'github',
+        facebook:'facebook',
+        website:'globe'
+      }
+      
       return (
         <a href={officer[site]} target="_blank">
-          <img src={"img/" + site + "-icon.png"} alt={officer.name + "'s " + site} />
+          <i className={"fa fa-"+icons[site]} alt={officer.name + "'s " + site} />
         </a>
       );
     })
@@ -29,17 +39,19 @@ class Team extends React.Component {
       })
       .map(function(officer) {
           return (
-            <div className="col-md-4 col-sm-6 col-xs-12">
+            <div className="col-lg-4 col-md-6">
               <div className="person">
                 <div className="main">
-                  <img className="profile-photo" src={officer.image} alt={officer.name + "'s photo"} />
-                  <div className="name-area">
-                    <h3>{officer.name}</h3>
-                    <h4>{officer.major}</h4>
+                  <div className="profile-photo">
+                    <img src={officer.image} alt={officer.name + "'s photo"} />
                     {showGraduates ?
                       <div className="graduation-year">{officer.graduate}</div>
                       : ""
                     }
+                  </div>
+                  <div className="name-area">
+                    <h3>{officer.name}</h3>
+                    <h4>{officer.major}</h4>
                   </div>
                   <div className="links-area">
                     {getSocialIcons(officer)}

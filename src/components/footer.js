@@ -7,6 +7,7 @@ class Footer extends React.Component {
       <footer id="footer">
         <div className="container">
           <a href="https://www.facebook.com/GtWebdev/"><i className="fa fa-facebook"></i></a>
+          <a href="https://www.youtube.com/channel/UCeYFMyequcLiFv0evR7x8hg"><i className="fa fa-youtube"></i></a>
         </div>
       </footer>
     );
