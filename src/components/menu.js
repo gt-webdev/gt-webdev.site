@@ -25,7 +25,7 @@ class Menu extends React.Component {
             <LinkContainer to="/events"><NavItem>Events</NavItem></LinkContainer>
             <LinkContainer to="/learn"><NavItem>Learn</NavItem></LinkContainer>
             <LinkContainer to="/about"><NavItem>About</NavItem></LinkContainer>
-            <LinkContainer to="/contact"><NavItem>Contact</NavItem></LinkContainer>
+            <LinkContainer to="/connect"><NavItem>Connect</NavItem></LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

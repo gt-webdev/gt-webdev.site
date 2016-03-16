@@ -8,7 +8,7 @@ import Events from './pages/events'
 import Event from './pages/event'
 import About from './pages/about'
 import Learn from './pages/learn'
-import Contact from './pages/contact'
+import Connect from './pages/connect'
 
 // Used for client-side and server-side rendering
 var router = (
@@ -19,7 +19,7 @@ var router = (
       <Route path="events/:id" component={Event} />
       <Route path="about" component={About} />
       <Route path="learn" component={Learn} />
-      <Route path="contact" component={Contact} />
+      <Route path="connect" component={Connect} />
     </Route>
   </Router>
 );

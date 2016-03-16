@@ -103,6 +103,16 @@ $footer-height:60px;
 	background:#fff;
 }
 
+.jumbotron {
+	text-align: center;
+	color: white;
+	height: 50vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	box-shadow:inset 0 -10px 10px -10px #000;
+}
+
 .home{
 
 
@@ -219,7 +229,7 @@ $footer-height:60px;
 		background:#f5f5f5;
 	}
 
-	#about-jumbotron {
+	.jumbotron {
 		background: linear-gradient(
 			rgba(0, 0, 0, 0.5), 
 			rgba(0, 0, 0, 0.5)
@@ -227,14 +237,8 @@ $footer-height:60px;
 			url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+CjxjaXJjbGUgY3g9IjMiIGN5PSIzIiByPSIxIiBmaWxsPSJibGFjayI+PC9jaXJjbGU+Cjwvc3ZnPg=="),/* http://codepen.io/anon/pen/reMMYL */
 			url("img/about-background.jpg") top center/cover;
 		background-attachment:fixed;
-		text-align: center;
-		color: white;
-		height: 50vh;
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		box-shadow:inset 0 -10px 10px -10px #000;
 	}
+
 	#about-organization h2 {
 		margin-top: 0;
 	}
@@ -358,5 +362,64 @@ $footer-height:60px;
 			padding: 10px;
 			background:#fff;
 		}
+	}
+}
+
+.page-connect {
+	.jumbotron {
+		background: linear-gradient(
+			rgba(0, 0, 0, 0.5), 
+			rgba(0, 0, 0, 0.5)
+		),
+			url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+CjxjaXJjbGUgY3g9IjMiIGN5PSIzIiByPSIxIiBmaWxsPSJibGFjayI+PC9jaXJjbGU+Cjwvc3ZnPg=="),/* http://codepen.io/anon/pen/reMMYL */
+			url("img/connect-background.jpg") top center/cover;
+		background-attachment:fixed;
+	}
+
+	@media (min-width: 768px) {
+		.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+			float: right;
+		}
+	}
+
+	.connect-action {
+		color: black;
+	}
+
+	.connect-action:hover {
+		text-decoration: none;
+		
+		.action-icon {
+			background: #262626;
+			text-shadow: 0 0 5px #eeb211;
+		}
+	}
+
+	.action-icon {
+		width: 100%;
+		font-size: 100px;
+		text-align: center;
+	}
+	.action-text {
+		font-size: 32px;
+	}
+
+	.action-facebook .action-icon {
+		background: #425896;
+		color: white;
+	}
+
+	.action-youtube .action-icon {
+		background: #ce3b21;
+		color: white;
+	}
+
+	.action-envelope .action-icon {
+		background: #eeb211;
+		color: white;
+	}
+
+	#footer {
+		margin-top: 30px;
 	}
 }
