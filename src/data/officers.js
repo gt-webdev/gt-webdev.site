@@ -24,14 +24,11 @@ const officers = [
     "stackoverflow": "https://stackoverflow.com/users/1721527/joshua-dwire"
   },
   {
-    "name": "Saleh Hamadeh",
-    "major": "CS - Devices & Mod/Sim",
-    "image": "img/profiles/saleh.png",
-    "description": "Saleh is very social and enjoys having thoughtful conversations about philosophy, economics, and code.",
-    "website": "http://www.shamadeh.com",
-    "github": "https://github.com/salehhamadeh",
-    "linkedin": "http://www.linkedin.com/pub/saleh-hamadeh/62/8b6/2a2",
-    "twitter": "https://twitter.com/salehhamadeh"
+    "name": "Clayton Kucera",
+    "major": "CS - Devices & People",
+    "image": "img/profiles/clayton.png",
+    "description": "Co-Communications Director and Technical Committee Member. He enjoys programming and helping his fellow gt-webdev members.",
+    "github": "https://github.com/ckucera3"
   },
   {
     "name": "Saleh Hamadeh",
