@@ -18,14 +18,6 @@ const events = [
     "rsvpLink": "https://facebook.com/",
     "image": "/img/html5-logo.png",
     "description": "REST APIs let services interact with other services. In this meeting, we will learn about REST APIs, how to use them, and how to build them."
-  },
-  {
-    "title": "Why web development is the best thing ever",
-    "start": new Date("Tue Feb 16 2016 18:00:00 GMT-0500 (EST)"),
-    "end": new Date("Tue Feb 16 2016 20:00:00 GMT-0500 (EST)"),
-    "location": "CCB 102",
-    "rsvpLink": "https://facebook.com/",
-    "description": "Lorem ipsum dolor mate Lorem ipsum dolor mate Lorem ipsum dolor mate Lorem ipsum dolor mate Lorem ipsum dolor mate Lorem ipsum dolor mate"
   }
 ];
 
@@ -45,8 +37,18 @@ const upcomingEvents = (() => {
   });
 })();
 
+const pastEvents = (() => {
+  const now = new Date();
+  return _.filter(events, (e) => {
+    return e.end < now;
+  }).sort((a, b) => {
+    return a.start < b.start ? 1 : -1;
+  });
+})();
+
 module.exports = {
   events,
   nextEvent,
-  upcomingEvents
+  upcomingEvents,
+  pastEvents
 }

@@ -1,9 +1,8 @@
 import React from 'react';
 import {Button} from 'react-bootstrap'
 import moment from 'moment'
-import {nextEvent, upcomingEvents} from '../data/events.js'
-import {defaultIcon} from '../data/defaults.js'
-
+import EventsList from '../components/events-list.js'
+import {nextEvent, upcomingEvents, pastEvents} from '../data/events.js'
 
 class Events extends React.Component {
 
@@ -23,25 +22,12 @@ class Events extends React.Component {
             <Button className="event-rsvp" bsStyle="primary" bsSize="large" href={nextEvent.rsvpLink}>RSVP</Button>
           </div>
         </div>
-        <div className="container" id="upcoming-events">
+        <div className="events-list container">
           <h2>Upcoming Events</h2>
-          {upcomingEvents.map(e => (
-              <div className="upcoming-event container">
-                <div className="row">
-                  <div className="col-sm-2">
-                    <div>
-                      <img className="event-image" src={e.image || defaultIcon} />
-                    </div>
-                    <div className="event-date">{moment(e.start).format("MMM D")}</div>
-                  </div>
-                  <div className="col-sm-10">
-                    <h3 className="event-title">{e.title}</h3>
-                    <p>{e.description}</p>
-                  </div>
-                </div>
-              </div>
-            )
-          )}
+          <EventsList events={upcomingEvents} />
+
+          <h2>Past Events</h2>
+          <EventsList events={pastEvents} />
         </div>
       </div>
     );
