@@ -23,7 +23,6 @@ class Menu extends React.Component {
           <Nav pullRight>
             <IndexLinkContainer to="/"><NavItem>Home</NavItem></IndexLinkContainer>
             <LinkContainer to="/events"><NavItem>Events</NavItem></LinkContainer>
-            <LinkContainer to="/learn"><NavItem>Learn</NavItem></LinkContainer>
             <LinkContainer to="/about"><NavItem>About</NavItem></LinkContainer>
             <LinkContainer to="/connect"><NavItem>Connect</NavItem></LinkContainer>
           </Nav>

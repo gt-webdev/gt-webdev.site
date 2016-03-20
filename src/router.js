@@ -7,7 +7,6 @@ import Home from './pages/home'
 import Events from './pages/events'
 import Event from './pages/event'
 import About from './pages/about'
-import Learn from './pages/learn'
 import Connect from './pages/connect'
 
 // Used for client-side and server-side rendering
@@ -18,7 +17,6 @@ var router = (
       <Route path="events" component={Events} />
       <Route path="events/:id" component={Event} />
       <Route path="about" component={About} />
-      <Route path="learn" component={Learn} />
       <Route path="connect" component={Connect} />
     </Route>
   </Router>
