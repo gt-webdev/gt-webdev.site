@@ -5,7 +5,6 @@ import createBrowserHistory from 'history/lib/createBrowserHistory'
 import Root from './components/root'
 import Home from './pages/home'
 import Events from './pages/events'
-import Event from './pages/event'
 import About from './pages/about'
 import Connect from './pages/connect'
 
@@ -15,7 +14,6 @@ var router = (
     <Route path="/" component={Root}>
       <IndexRoute component={Home} />
       <Route path="events" component={Events} />
-      <Route path="events/:id" component={Event} />
       <Route path="about" component={About} />
       <Route path="connect" component={Connect} />
     </Route>
