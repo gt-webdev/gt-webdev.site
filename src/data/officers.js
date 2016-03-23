@@ -40,14 +40,14 @@ const officers = [
     "linkedin": "https://www.linkedin.com/in/pramodkotipalli"
   },
   {
-    "name": "Saleh Hamadeh",
-    "major": "CS - Devices & Mod/Sim",
-    "image": "img/profiles/saleh.png",
-    "description": "Saleh is very social and enjoys having thoughtful conversations about philosophy, economics, and code.",
-    "website": "http://www.shamadeh.com",
-    "github": "https://github.com/salehhamadeh",
-    "linkedin": "http://www.linkedin.com/pub/saleh-hamadeh/62/8b6/2a2",
-    "twitter": "https://twitter.com/salehhamadeh"
+    "name": "Zhiyuan \"Jerry\" Lin",
+    "major": "CS - Info Internetworks & Intelligence",
+    "image": "img/profiles/jerry.png",
+    "description": "Researcher, developer, thinker, doer. In general, Jerry is cool.",
+    "website": "http://www.itsmrlin.com",
+    "github": "https://github.com/ItsMrLin",
+    "linkedin": "https://www.linkedin.com/in/zhiyuanlin",
+    "twitter": "https://twitter.com/ItsMrLin"
   },
   {
     "name": "Saleh Hamadeh",
@@ -55,7 +55,7 @@ const officers = [
     "image": "img/profiles/saleh.png",
     "description": "Saleh is very social and enjoys having thoughtful conversations about philosophy, economics, and code.",
     "website": "http://www.shamadeh.com",
-    "github": "https://github.com/salehhamadeh",
+    "github": "https://github.com/ItsMrLin",
     "linkedin": "http://www.linkedin.com/pub/saleh-hamadeh/62/8b6/2a2",
     "twitter": "https://twitter.com/salehhamadeh"
   },
