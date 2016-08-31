@@ -2,13 +2,22 @@ import _ from 'lodash'
 
 const events = [
   {
-    "title": "Login Systems",
-    "start": new Date("Tue Aug 31 2016 18:30:00 GMT-0400 (EDT)"),
-    "end": new Date("Tue Aug 31 2016 20:30:00 GMT-0400 (EDT)"),
+    "title": "HTML/CSS",
+    "start": new Date("Tue Sep 6 2016 18:00:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Sep 6 2016 20:00:00 GMT-0400 (EDT)"),
+    "location": "Klaus 1443",
+    "rsvpLink": "https://facebook.com/GtWebdev/",
+    "image": "/img/html5-logo.png",
+    "description": "A web app without HTML/CSS is like a bird without wings. Learn the basics of web development by mastering HTML/CSS."
+  },
+  {
+    "title": "Login Systems (Webdev Talk)",
+    "start": new Date("Wed Aug 31 2016 18:30:00 GMT-0400 (EDT)"),
+    "end": new Date("Wed Aug 31 2016 20:30:00 GMT-0400 (EDT)"),
     "location": "CCB 340",
     "rsvpLink": "https://facebook.com/events/171006130000571/",
     "image": "/img/auth0.png",
-    "description": "Almost every web application needs a web app system. Learn how to efficiently create a secure login system using auth0 API in this meeting."
+    "description": "Almost every web application needs a login system. Learn how to efficiently create a secure login system using auth0 API in this meeting."
   },
   {
     "title": "Introduction to gt-webdev!",
