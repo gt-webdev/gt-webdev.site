@@ -2,22 +2,22 @@ import _ from 'lodash'
 
 const events = [
   {
-    "title": "Introduction to Node.js",
-    "start": new Date("Tue Mar 1 2016 18:00:00 GMT-0500 (EST)"),
-    "end": new Date("Tue Mar 1 2016 20:00:00 GMT-0500 (EST)"),
-    "location": "CCB 102",
-    "rsvpLink": "https://facebook.com/",
-    "image": "/img/nodejs-logo.png",
-    "description": "How cool is it to program in the same language on the client and the server? Node.js let us do that by bringing JavaScript to the server for the first time in computer history."
+    "title": "Login Systems",
+    "start": new Date("Tue Aug 31 2016 18:30:00 GMT-0500 (EST)"),
+    "end": new Date("Tue Aug 31 2016 20:30:00 GMT-0500 (EST)"),
+    "location": "CCB 340",
+    "rsvpLink": "https://facebook.com/events/171006130000571/",
+    "image": "/img/auth0.png",
+    "description": "Almost every web application needs a web app system. Learn how to efficiently create a secure login system using auth0 API in this meeting."
   },
   {
-    "title": "REST APIs",
-    "start": new Date("Tue Feb 23 2016 18:00:00 GMT-0500 (EST)"),
-    "end": new Date("Tue Feb 23 2016 20:00:00 GMT-0500 (EST)"),
-    "location": "CCB 102",
-    "rsvpLink": "https://facebook.com/",
-    "image": "/img/html5-logo.png",
-    "description": "REST APIs let services interact with other services. In this meeting, we will learn about REST APIs, how to use them, and how to build them."
+    "title": "Introduction to gt-webdev!",
+    "start": new Date("Tue Aug 30 2016 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Tue Aug 30 2016 20:00:00 GMT-0500 (EST)"),
+    "location": "Klaus 1443",
+    "rsvpLink": "https://facebook.com/GtWebdev",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Welcome to gt-webdev! Learn what gt-webdev is all about and expect a great meeting!"
   }
 ];
 
