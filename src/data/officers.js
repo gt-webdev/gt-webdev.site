@@ -29,6 +29,15 @@ const officers = [
     "linkedin": "https://www.linkedin.com/in/pramodkotipalli"
   },
   {
+    "name": "Yuda Winata",
+    "major": "CS - Systems/Architecture & Info Internetworks",
+    "image": "img/profiles/yuda.jpg",
+    "description": "Loves frogs.",
+    "github": "https://github.com/masteryoda123"
+    "linkedin": "https://www.linkedin.com/in/yudawinata"
+    "facebook": "https://www.facebook.com/yuda.a.winata",
+ },
+ {
     "name": "Saleh Hamadeh",
     "major": "CS - Devices & Mod/Sim",
     "graduate": "2016",
