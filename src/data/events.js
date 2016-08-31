@@ -3,8 +3,8 @@ import _ from 'lodash'
 const events = [
   {
     "title": "Login Systems",
-    "start": new Date("Tue Aug 31 2016 18:30:00 GMT-0500 (EST)"),
-    "end": new Date("Tue Aug 31 2016 20:30:00 GMT-0500 (EST)"),
+    "start": new Date("Tue Aug 31 2016 18:30:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Aug 31 2016 20:30:00 GMT-0400 (EDT)"),
     "location": "CCB 340",
     "rsvpLink": "https://facebook.com/events/171006130000571/",
     "image": "/img/auth0.png",
@@ -12,8 +12,8 @@ const events = [
   },
   {
     "title": "Introduction to gt-webdev!",
-    "start": new Date("Tue Aug 30 2016 18:00:00 GMT-0500 (EST)"),
-    "end": new Date("Tue Aug 30 2016 20:00:00 GMT-0500 (EST)"),
+    "start": new Date("Tue Aug 30 2016 18:00:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Aug 30 2016 20:00:00 GMT-0400 (EDT)"),
     "location": "Klaus 1443",
     "rsvpLink": "https://facebook.com/GtWebdev",
     "image": "/img/gt-webdev-icon.png",
