@@ -33,9 +33,9 @@ const officers = [
     "major": "CS - Systems/Architecture & Info Internetworks",
     "image": "img/profiles/yuda.jpg",
     "description": "Loves frogs.",
-    "github": "https://github.com/masteryoda123"
-    "linkedin": "https://www.linkedin.com/in/yudawinata"
-    "facebook": "https://www.facebook.com/yuda.a.winata",
+    "github": "https://github.com/masteryoda123",
+    "linkedin": "https://www.linkedin.com/in/yudawinata",
+    "facebook": "https://www.facebook.com/yuda.a.winata"
  },
  {
     "name": "Saleh Hamadeh",
