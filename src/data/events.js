@@ -5,7 +5,7 @@ const events = [
     "title": "HTML/CSS",
     "start": new Date("Tue Sep 6 2016 18:00:00 GMT-0400 (EDT)"),
     "end": new Date("Tue Sep 6 2016 20:00:00 GMT-0400 (EDT)"),
-    "location": "TBA",
+    "location": "Venue TBA",
     "rsvpLink": "https://facebook.com/GtWebdev/",
     "image": "/img/html5-logo.png",
     "description": "A web app without HTML/CSS is like a bird without wings. Learn the basics of web development by mastering HTML/CSS."
