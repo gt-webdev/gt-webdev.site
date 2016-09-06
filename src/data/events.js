@@ -2,11 +2,20 @@ import _ from 'lodash'
 
 const events = [
   {
+    "title": "Web API",
+    "start": new Date("Tue Sep 7 2016 18:30:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Sep 7 2016 20:30:00 GMT-0400 (EDT)"),
+    "location": "CCB 340",
+    "rsvpLink": " https://www.facebook.com/GtWebdev",
+    "image": "/img/internet.png",
+    "description": "Have you ever wondered how your web browser communicates with a server? Did you know that you can integrate your web applications with other web apps like Facebook, Google, or anything? Come to this meeting to learn more about the basics of Web API. We're also going to build a web app that is integrated with Facebook and Microsoft's Machine Learning Service."
+  },
+  {
     "title": "HTML/CSS",
     "start": new Date("Tue Sep 6 2016 18:00:00 GMT-0400 (EDT)"),
     "end": new Date("Tue Sep 6 2016 20:00:00 GMT-0400 (EDT)"),
-    "location": "Venue TBA",
-    "rsvpLink": "https://facebook.com/GtWebdev/",
+    "location": "Klaus 2456",
+    "rsvpLink": " https://www.facebook.com/events/1780166582229539/",
     "image": "/img/html5-logo.png",
     "description": "A web app without HTML/CSS is like a bird without wings. Learn the basics of web development by mastering HTML/CSS."
   },
