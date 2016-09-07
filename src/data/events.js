@@ -2,11 +2,29 @@ import _ from 'lodash'
 
 const events = [
   {
+    "title": "Microsoft Azure Workshop",
+    "start": new Date("Tue Sep 14 2016 18:00:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Sep 14 2016 20:30:00 GMT-0400 (EDT)"),
+    "location": "Howey L4",
+    "rsvpLink": " https://www.facebook.com/GtWebdev",
+    "image": "/img/microsoft-azure-logo.png",
+    "description": "Come to this workshop co-hosted by Microsoft and learn about Microsoft Cloud Platform and introductory workshop to making web and mobile apps using Azure App Service. Bring your resume for a chance to win an XBOX ONE!"
+  },
+  {
+    "title": "Javascript",
+    "start": new Date("Tue Sep 13 2016 18:00:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Sep 13 2016 20:00:00 GMT-0400 (EDT)"),
+    "location": "Klaus 2456",
+    "rsvpLink": " https://www.facebook.com/GtWebdev",
+    "image": "/img/javascript-logo.png",
+    "description": "Learn JavaScript from 0 to 10 and become a master of dynamic web application developer!"
+  },
+  {
     "title": "Web API",
     "start": new Date("Tue Sep 7 2016 18:30:00 GMT-0400 (EDT)"),
     "end": new Date("Tue Sep 7 2016 20:30:00 GMT-0400 (EDT)"),
     "location": "CCB 340",
-    "rsvpLink": " https://www.facebook.com/GtWebdev",
+    "rsvpLink": "http://www.facebook.com/events/1135467673207360/",
     "image": "/img/internet.png",
     "description": "Have you ever wondered how your web browser communicates with a server? Did you know that you can integrate your web applications with other web apps like Facebook, Google, or anything? Come to this meeting to learn more about the basics of Web API. We're also going to build a web app that is integrated with Facebook and Microsoft's Machine Learning Service."
   },
