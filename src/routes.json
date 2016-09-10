@@ -18,5 +18,9 @@
   {
     "path": "/connect",
     "title": "Connect with gt-webdev"
+  },
+  {
+    "path": "/privacy",
+    "title": "Privacy Policy"
   }
 ]
