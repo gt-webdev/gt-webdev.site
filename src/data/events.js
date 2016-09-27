@@ -2,9 +2,18 @@ import _ from 'lodash'
 
 const events = [
   {
+    "title": "DOM Manipulation",
+    "start": new Date("Tue Sep 27 2016 18:00:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Sep 27 2016 20:00:00 GMT-0400 (EDT)"),
+    "location": "Klaus 2456",
+    "rsvpLink": " https://www.facebook.com/events/1841593719403441/",
+    "image": "/img/internet.png",
+    "description": "Learn how to use Javascript and JQuery to manipulate your web page to make it interactive!"
+  },
+  {
     "title": "Microsoft Azure Workshop",
-    "start": new Date("Tue Sep 14 2016 18:00:00 GMT-0400 (EDT)"),
-    "end": new Date("Tue Sep 14 2016 20:30:00 GMT-0400 (EDT)"),
+    "start": new Date("Wed Sep 14 2016 18:00:00 GMT-0400 (EDT)"),
+    "end": new Date("Wed Sep 14 2016 20:30:00 GMT-0400 (EDT)"),
     "location": "Howey L4",
     "rsvpLink": " https://www.facebook.com/GtWebdev",
     "image": "/img/microsoft-azure-logo.png",
