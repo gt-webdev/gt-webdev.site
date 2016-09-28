@@ -32,7 +32,7 @@ const officers = [
     "name": "Yuda Winata",
     "major": "CS - Systems/Architecture & Info Internetworks",
     "image": "img/profiles/yuda.jpg",
-    "description": "Loves frogs.",
+    "description": "A cool, crazy web developer.",
     "github": "https://github.com/masteryoda123",
     "linkedin": "https://www.linkedin.com/in/yudawinata",
     "facebook": "https://www.facebook.com/yuda.a.winata"
