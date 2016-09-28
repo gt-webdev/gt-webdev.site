@@ -2,11 +2,20 @@ import _ from 'lodash'
 
 const events = [
   {
+    "title": "Introduction to Front-end Frameworks and Angular 1.5",
+    "start": new Date("Wed Sep 28 2016 18:30:00 GMT-0400 (EDT)"),
+    "end": new Date("Wed Sep 28 2016 20:30:00 GMT-0400 (EDT)"),
+    "location": "CCB 340",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/angularjs-logo.png",
+    "description": "Come to this meeting to learn using a front-end framework and make cool web apps!"
+  },
+  {
     "title": "DOM Manipulation",
     "start": new Date("Tue Sep 27 2016 18:00:00 GMT-0400 (EDT)"),
     "end": new Date("Tue Sep 27 2016 20:00:00 GMT-0400 (EDT)"),
     "location": "Klaus 2456",
-    "rsvpLink": " https://www.facebook.com/events/1841593719403441/",
+    "rsvpLink": "https://www.facebook.com/events/1841593719403441/",
     "image": "/img/internet.png",
     "description": "Learn how to use Javascript and JQuery to manipulate your web page to make it interactive!"
   },
@@ -15,7 +24,7 @@ const events = [
     "start": new Date("Wed Sep 14 2016 18:00:00 GMT-0400 (EDT)"),
     "end": new Date("Wed Sep 14 2016 20:30:00 GMT-0400 (EDT)"),
     "location": "Howey L4",
-    "rsvpLink": " https://www.facebook.com/GtWebdev",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
     "image": "/img/microsoft-azure-logo.png",
     "description": "Come to this workshop co-hosted by Microsoft and learn about Microsoft Cloud Platform and introductory workshop to making web and mobile apps using Azure App Service. Bring your resume for a chance to win an XBOX ONE!"
   },
@@ -24,7 +33,7 @@ const events = [
     "start": new Date("Tue Sep 13 2016 18:00:00 GMT-0400 (EDT)"),
     "end": new Date("Tue Sep 13 2016 20:00:00 GMT-0400 (EDT)"),
     "location": "Klaus 2456",
-    "rsvpLink": " https://www.facebook.com/GtWebdev",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
     "image": "/img/javascript-logo.png",
     "description": "Learn JavaScript from 0 to 10 and become a master of dynamic web application developer!"
   },
