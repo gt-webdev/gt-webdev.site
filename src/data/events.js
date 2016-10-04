@@ -2,6 +2,15 @@ import _ from 'lodash'
 
 const events = [
   {
+    "title": "ReactJS",
+    "start": new Date("Tue Oct 4 2016 18:00:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Oct 4 2016 20:00:00 GMT-0400 (EDT)"),
+    "location": "Klaus 2456",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/react-logo.png",
+    "description": "Come to learn a really cool front-end framework, ReactJS, and make your website dynamic"
+  },
+  {
     "title": "Introduction to Front-end Frameworks and Angular 1.5",
     "start": new Date("Wed Sep 28 2016 18:30:00 GMT-0400 (EDT)"),
     "end": new Date("Wed Sep 28 2016 20:30:00 GMT-0400 (EDT)"),
