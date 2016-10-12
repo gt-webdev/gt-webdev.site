@@ -2,6 +2,15 @@ import _ from 'lodash'
 
 const events = [
   {
+    "title": "Hang out with gt-webdev officers and buddies!",
+    "start": new Date("Wed Oct 12 2016 18:30:00 GMT-0400 (EDT)"),
+    "end": new Date("Wed Oct 12 2016 20:30:00 GMT-0400 (EDT)"),
+    "location": "CCB 340",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Come today to hangout with fellow web developers and get your questions answered!"
+  },
+  {
     "title": "Home Depot: TDD with Ruby on Rails",
     "start": new Date("Wed Oct 5 2016 18:30:00 GMT-0400 (EDT)"),
     "end": new Date("Wed Oct 5 2016 20:30:00 GMT-0400 (EDT)"),
