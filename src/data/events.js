@@ -2,6 +2,15 @@ import _ from 'lodash'
 
 const events = [
   {
+    "title": "Redux Tutorial",
+    "start": new Date("Tue Oct 18 2016 18:00:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Oct 18 2016 20:00:00 GMT-0400 (EDT)"),
+    "location": "Klaus 2456",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/react-logo.png",
+    "description": "Learn Redux and master front-end development!"
+  },
+  {
     "title": "Hang out with gt-webdev officers and buddies!",
     "start": new Date("Wed Oct 12 2016 18:30:00 GMT-0400 (EDT)"),
     "end": new Date("Wed Oct 12 2016 20:30:00 GMT-0400 (EDT)"),
