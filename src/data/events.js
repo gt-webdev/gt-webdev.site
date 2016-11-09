@@ -3,8 +3,8 @@ import _ from 'lodash'
 const events = [
   {
     "title": "Code and Chill",
-    "start": new Date("Wed Nov 9 2016 18:30:00 GMT-0400 (EDT)"),
-    "end": new Date("Wed Nov 9 2016 20:30:00 GMT-0400 (EDT)"),
+    "start": new Date("Wed Nov 9 2016 18:30:00 GMT-0500 (EST)"),
+    "end": new Date("Wed Nov 9 2016 20:30:00 GMT-0500 (EST)"),
     "location": "CCB 340",
     "rsvpLink": "https://www.facebook.com/GtWebdev",
     "image": "/img/gt-webdev-icon.png",
