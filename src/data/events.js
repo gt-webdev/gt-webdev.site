@@ -2,6 +2,15 @@ import _ from 'lodash'
 
 const events = [
   {
+    "title": "MongoDB",
+    "start": new Date("Wed Nov 15 2016 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Wed Nov 15 2016 20:00:00 GMT-0500 (EST)"),
+    "location": "Klaus 2456",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Come to learn more about MongoDB and other database systems"
+  },
+  {
     "title": "Code and Chill",
     "start": new Date("Wed Nov 9 2016 18:30:00 GMT-0500 (EST)"),
     "end": new Date("Wed Nov 9 2016 20:30:00 GMT-0500 (EST)"),
