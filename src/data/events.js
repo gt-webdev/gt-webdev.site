@@ -2,6 +2,15 @@ import _ from 'lodash'
 
 const events = [
   {
+    "title": "Socket.io",
+    "start": new Date("Wed Nov 28 2016 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Wed Nov 28 2016 20:00:00 GMT-0500 (EST)"),
+    "location": "Klaus 2456",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/socketio-logo.png",
+    "description": "Come to learn more about utilizing WebSocket technology, using a javascript and nodejs library, Socket.io"
+  },
+  {
     "title": "MongoDB",
     "start": new Date("Wed Nov 15 2016 18:00:00 GMT-0500 (EST)"),
     "end": new Date("Wed Nov 15 2016 20:00:00 GMT-0500 (EST)"),

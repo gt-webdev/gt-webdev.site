@@ -2,4 +2,7 @@
 /dist/
 /dist-server/
 npm-debug.log
+npm-debug.log.*
+gulp
+nohup.out
 .DS_Store
