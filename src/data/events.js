@@ -2,6 +2,15 @@ import _ from 'lodash'
 
 const events = [
   {
+    "title": "How The Internet Works",
+    "start": new Date("Tue Jan 17 2017 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Tue Jan 17 2017 20:00:00 GMT-0500 (EST)"),
+    "location": "Klaus 2447",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/internet.png",
+    "description": "Come learn about how to build an N tier site and begin your journey to becoming a Web Developer!"
+  },
+  {
     "title": "Socket.io",
     "start": new Date("Tue Nov 29 2016 18:00:00 GMT-0500 (EST)"),
     "end": new Date("Tue Nov 29 2016 20:00:00 GMT-0500 (EST)"),
