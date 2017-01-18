@@ -2,6 +2,16 @@ import _ from 'lodash'
 
 const events = [
   {
+    "title": "Code and Chill",
+    "start": new Date("Wed Jan 18 2017 18:30:00 GMT-0500 (EST)"),
+    "end": new Date("Wed Jan 18 2017 20:30:00 GMT-0500 (EST)"),
+    "location": "CCB 340",
+
+    "rsvpLink": "https://www.facebook.com/events/1823600287912573/",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Come to chill with gt-webdev officers and other club members!"
+  },
+  {
     "title": "How The Internet Works",
     "start": new Date("Tue Jan 17 2017 18:00:00 GMT-0500 (EST)"),
     "end": new Date("Tue Jan 17 2017 20:00:00 GMT-0500 (EST)"),
