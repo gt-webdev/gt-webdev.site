@@ -3,18 +3,53 @@ import _ from 'lodash'
 const events = [
   {
     "title": "Code and Chill",
+    "start": new Date("Wed Feb 8 2017 18:30:00 GMT-0500 (EST)"),
+    "end": new Date("Wed Feb 8 2017 20:30:00 GMT-0500 (EST)"),
+    "location": "CCB 340",
+    "rsvpLink": "https://www.facebook.com/GtWebdev/",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Come to chill with gt-webdev officers and other club members!"
+  },
+  {
+    "title": "JavaScript with Event Handling",
+    "start": new Date("Tue Feb 7 2017 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Tue Feb 7 2017 20:00:00 GMT-0500 (EST)"),
+    "location": "Klaus 2447",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/javascript-logo.png",
+    "description": "Make your webpage dynamic by learning the most popular web-scripting language, JavaScript"
+  },
+  {
+    "title": "Code and Chill",
+    "start": new Date("Wed Feb 1 2017 18:30:00 GMT-0500 (EST)"),
+    "end": new Date("Wed Feb 1 2017 20:30:00 GMT-0500 (EST)"),
+    "location": "CCB 340",
+    "rsvpLink": "https://www.facebook.com/GtWebdev/",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Come to chill with gt-webdev officers and other club members!"
+  },
+  {
+    "title": "Bootstrap",
+    "start": new Date("Tue Jan 31 2017 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Tue Jan 31 2017 20:00:00 GMT-0500 (EST)"),
+    "location": "Klaus 2447",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/bootstrap-logo.png",
+    "description": "Ever wondered if it's possible to style and make your web page look professional in no time? Learn Bootstrap and you'll be able to do just that!"
+  },
+  {
+    "title": "Code and Chill",
     "start": new Date("Wed Jan 18 2017 18:30:00 GMT-0500 (EST)"),
     "end": new Date("Wed Jan 18 2017 20:30:00 GMT-0500 (EST)"),
     "location": "CCB 340",
-
     "rsvpLink": "https://www.facebook.com/events/1823600287912573/",
     "image": "/img/gt-webdev-icon.png",
     "description": "Come to chill with gt-webdev officers and other club members!"
   },
   {
     "title": "How The Internet Works",
-    "start": new Date("Tue Jan 17 2017 18:00:00 GMT-0500 (EST)"),
-    "end": new Date("Tue Jan 17 2017 20:00:00 GMT-0500 (EST)"),
+    "start": new Date("Tue Nov 29 2016 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Tue Nov 29 2016 20:00:00 GMT-0500 (EST)"),
     "location": "Klaus 2447",
     "rsvpLink": "https://www.facebook.com/GtWebdev",
     "image": "/img/internet.png",
