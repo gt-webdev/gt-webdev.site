@@ -3,6 +3,24 @@ import _ from 'lodash'
 const events = [
   {
     "title": "Code and Chill",
+    "start": new Date("Wed Feb 15 2017 18:30:00 GMT-0500 (EST)"),
+    "end": new Date("Wed Feb 15 2017 20:30:00 GMT-0500 (EST)"),
+    "location": "CCB 340",
+    "rsvpLink": "https://www.facebook.com/GtWebdev/",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Come to chill with gt-webdev officers and other club members!"
+  },
+  {
+    "title": "JavaScript: Event Handling",
+    "start": new Date("Tue Feb 14 2017 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Tue Feb 14 2017 20:00:00 GMT-0500 (EST)"),
+    "location": "Klaus 2447",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/javascript-logo.png",
+    "description": "Make your webpage dynamic by learning the most popular web-scripting language, JavaScript"
+  },
+  {
+    "title": "Code and Chill",
     "start": new Date("Wed Feb 8 2017 18:30:00 GMT-0500 (EST)"),
     "end": new Date("Wed Feb 8 2017 20:30:00 GMT-0500 (EST)"),
     "location": "CCB 340",
@@ -11,13 +29,13 @@ const events = [
     "description": "Come to chill with gt-webdev officers and other club members!"
   },
   {
-    "title": "JavaScript with Event Handling",
+    "title": "D3.js",
     "start": new Date("Tue Feb 7 2017 18:00:00 GMT-0500 (EST)"),
     "end": new Date("Tue Feb 7 2017 20:00:00 GMT-0500 (EST)"),
     "location": "Klaus 2447",
     "rsvpLink": "https://www.facebook.com/GtWebdev",
     "image": "/img/javascript-logo.png",
-    "description": "Make your webpage dynamic by learning the most popular web-scripting language, JavaScript"
+    "description": "Turn your data into beautiful graphics with one of the most powerful visualization libraries, D3.js"
   },
   {
     "title": "Code and Chill",
