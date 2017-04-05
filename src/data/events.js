@@ -3,6 +3,123 @@ import _ from 'lodash'
 const events = [
   {
     "title": "Code and Chill",
+    "start": new Date("Wed Apr 12 2017 18:30:00 GMT-0400 (EDT)"),
+    "end": new Date("Wed Apr 12 2017 20:30:00 GMT-0400 (EDT)"),
+    "location": "CCB 340",
+    "rsvpLink": "https://www.facebook.com/GtWebdev/",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Come to chill with gt-webdev officers and other club members!"
+  },
+  {
+    "title": "Alexa",
+    "start": new Date("Tue Apr 11 2017 18:00:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Apr 11 2017 20:00:00 GMT-0400 (EDT)"),
+    "location": "Klaus 2447",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/alexa-logo.png",
+    "description": "We'll explore what Alexa can do"
+  },
+  {
+    "title": "Web Application Security",
+    "start": new Date("Tue Apr 4 2017 18:00:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Apr 4 2017 20:00:00 GMT-0400 (EDT)"),
+    "location": "Klaus 2447",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/hacker-logo.jpg",
+    "description": "Learn how hackers exploit common web application vulnerabilities (SQL Injection, XSS, CSRF, and more) and secure your web apps!"
+  },
+  {
+    "title": "Code and Chill",
+    "start": new Date("Wed Mar 29 2017 18:30:00 GMT-0400 (EDT)"),
+    "end": new Date("Wed Mar 29 2017 20:30:00 GMT-0400 (EDT)"),
+    "location": "CCB 340",
+    "rsvpLink": "https://www.facebook.com/GtWebdev/",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Come to chill with gt-webdev officers and other club members!"
+  },
+  {
+    "title": "React VR",
+    "start": new Date("Tue Mar 28 2017 18:00:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Mar 28 2017 20:00:00 GMT-0400 (EDT)"),
+    "location": "Klaus 2447",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/react-logo.png",
+    "description": "Come to this week's meeting to learn how to build Virtual Reality websites with React VR!! React VR simplifies building VR web applications, and lets you build web apps using only JavaScript!"
+  },
+  {
+    "title": "Code and Chill",
+    "start": new Date("Wed Mar 15 2017 18:30:00 GMT-0400 (EDT)"),
+    "end": new Date("Wed Mar 15 2017 20:30:00 GMT-0400 (EDT)"),
+    "location": "CCB 340",
+    "rsvpLink": "https://www.facebook.com/GtWebdev/",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Come to chill with gt-webdev officers and other club members!"
+  },
+  {
+    "title": "ReactJS",
+    "start": new Date("Tue Mar 14 2017 18:00:00 GMT-0400 (EDT)"),
+    "end": new Date("Tue Mar 14 2017 20:00:00 GMT-0400 (EDT)"),
+    "location": "Klaus 2447",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/react-logo.png",
+    "description": "Learn the very famous and modern front-end framework, ReactJS!"
+  },
+  {
+    "title": "Code and Chill",
+    "start": new Date("Wed Mar 8 2017 18:30:00 GMT-0500 (EST)"),
+    "end": new Date("Wed Mar 8 2017 20:30:00 GMT-0500 (EST)"),
+    "location": "CCB 340",
+    "rsvpLink": "https://www.facebook.com/GtWebdev/",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Come to chill with gt-webdev officers and other club members!"
+  },
+  {
+    "title": "Chrome Extensions",
+    "start": new Date("Tue Mar 7 2017 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Tue Mar 7 2017 20:00:00 GMT-0500 (EST)"),
+    "location": "Klaus 2447",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/chrome-logo.png",
+    "description": "Learn how to make your own extensions for the very popular web browser, Google Chrome"
+  },
+  {
+    "title": "Code and Chill",
+    "start": new Date("Wed Mar 1 2017 18:30:00 GMT-0500 (EST)"),
+    "end": new Date("Wed Mar 1 2017 20:30:00 GMT-0500 (EST)"),
+    "location": "CCB 340",
+    "rsvpLink": "https://www.facebook.com/GtWebdev/",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Come to chill with gt-webdev officers and other club members!"
+  },
+  {
+    "title": "Database: MongoDB",
+    "start": new Date("Tue Feb 28 2017 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Tue Feb 28 2017 20:00:00 GMT-0500 (EST)"),
+    "location": "Klaus 2447",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/mongodb-logo.png",
+    "description": "Come to this week's meeting to learn about the various databases that exist and how you can use them with your website!"
+  },
+  {
+    "title": "Code and Chill",
+    "start": new Date("Wed Feb 22 2017 18:30:00 GMT-0500 (EST)"),
+    "end": new Date("Wed Feb 22 2017 20:30:00 GMT-0500 (EST)"),
+    "location": "CCB 340",
+    "rsvpLink": "https://www.facebook.com/GtWebdev/",
+    "image": "/img/gt-webdev-icon.png",
+    "description": "Come to chill with gt-webdev officers and other club members!"
+  },
+  {
+    "title": "Introduction to Web Server Programming",
+    "start": new Date("Tue Feb 21 2017 18:00:00 GMT-0500 (EST)"),
+    "end": new Date("Tue Feb 21 2017 20:00:00 GMT-0500 (EST)"),
+    "location": "Klaus 2447",
+    "rsvpLink": "https://www.facebook.com/GtWebdev",
+    "image": "/img/nodejs-logo.png",
+    "description": "Come to this meeting to learn about basics of web server and how to create one with Node.js"
+  },
+  {
+    "title": "Code and Chill",
     "start": new Date("Wed Feb 15 2017 18:30:00 GMT-0500 (EST)"),
     "end": new Date("Wed Feb 15 2017 20:30:00 GMT-0500 (EST)"),
     "location": "CCB 340",
