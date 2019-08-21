@@ -9,7 +9,7 @@ class Home extends React.Component {
       <div className="home">
         <div className="next-event">
           <div className="container">
-            <div className="next-event-label">next meeting</div>
+            <div className="next-event-label">next event</div>
             <h2 className="event-title">{nextEvent.title}</h2>
             <div className="event-details">
               <span className="event-date">{moment(nextEvent.start).format("dddd, MMM Do")}</span>

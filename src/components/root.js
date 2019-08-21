@@ -31,7 +31,7 @@ class Root extends React.Component {
 
 
 
-          $(window).on('scroll touchstart touchend touchmove touchcancel gesturestart gestureend gesturechange orientationchange', requestTick);	
+          $(window).on('scroll touchstart touchend touchmove touchcancel gesturestart gestureend gesturechange orientationchange', requestTick);
 
           var ticking = false;
           function requestTick() {
@@ -42,16 +42,16 @@ class Root extends React.Component {
           function recalc(){
               ticking=false;
               // HTML5 proves useful for helping with creating JS functions!
-              // also, negative value because we're scrolling upwards                             
-              var yPos = window.scrollY * speed; 
+              // also, negative value because we're scrolling upwards
+              var yPos = window.scrollY * speed;
 
               // move the background
               scrollEl.style.backgroundPosition = '50% '+ yPos + 'px';
           };
-      });  
+      });
     });
   }
-  
+
   render() {
     return (
       <div className={'page-' + (this.props.location.pathname.replace(/^\/+/,'').replace(/\//g,'-') || 'home')}>
