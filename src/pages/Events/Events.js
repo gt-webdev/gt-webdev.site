@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Button} from 'react-bootstrap';
 import moment from 'moment';
-import EventsList from '../../components/events-list.js';
+import EventsList from '../../components/EventsList/EventsList.js';
 import {nextEvent, upcomingEvents, pastEvents} from '../../data/events.js';
 
 class Events extends Component {

@@ -21,16 +21,14 @@ class Menu extends Component {
     }
     render() {
         return (
-            <Navbar inverse>
-                <Navbar.Header>
-                    <Navbar.Brand>
-                        <h1 className="sr-only">GT-WebDev</h1>
-                        <Link to="/"><span className="webdev-logo">&lt;<span className="webdev-logo-gt">gt</span><span className="webdev-logo-hyphen">-</span><span className="webdev-logo-webdev">webdev</span>/&gt;</span></Link>
-                    </Navbar.Brand>
-                    <Navbar.Toggle />
-                </Navbar.Header>
+            <Navbar inverse="true">
+                <Navbar.Brand>
+                    <h1 className="sr-only">GT-WebDev</h1>
+                    <Link to="/"><span className="webdev-logo">&lt;<span className="webdev-logo-gt">gt</span><span className="webdev-logo-hyphen">-</span><span className="webdev-logo-webdev">webdev</span>/&gt;</span></Link>
+                </Navbar.Brand>
+                <Navbar.Toggle />
                 <Navbar.Collapse>
-                    <Nav pullRight>
+                    <Nav pullright="true">
                         <IndexLinkContainer to="/"><NavItem>Home</NavItem></IndexLinkContainer>
                         <LinkContainer to="/events"><NavItem>Events</NavItem></LinkContainer>
                         <LinkContainer to="/about"><NavItem>About</NavItem></LinkContainer>
