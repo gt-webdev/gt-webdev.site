@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Team from '../components/Team/Team';
+import Team from '../../components/Team/Team';
 
 class About extends Component {
     componentWillMount() {

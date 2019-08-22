@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {Link} from 'react-router';
+import {Link} from 'react-router-dom';
 import {IndexLinkContainer, LinkContainer} from 'react-router-bootstrap';
-var Navbar = require("react-bootstrap/lib/Navbar");
-var Nav = require("react-bootstrap/lib/Nav");
-var NavItem = require("react-bootstrap/lib/NavItem");
-var MenuItem = require("react-bootstrap/lib/MenuItem");
-var NavDropdown = require("react-bootstrap/lib/NavDropdown");
+import {Navbar, Nav, NavItem, MenuItem, NavDropdown} from 'react-bootstrap';
 
 class Menu extends Component {
     componentDidMount() {

@@ -94,4 +94,4 @@ const officers = [
     }
 ];
 
-module.exports = officers;
+export default officers;

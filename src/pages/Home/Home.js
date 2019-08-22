@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {nextEvent} from '../data/events.js';
+import {nextEvent} from '../../data/events.js';
 import {Button} from 'react-bootstrap';
 import moment from 'moment';
 
@@ -19,7 +19,7 @@ class Home extends Component {
                             <br/>
                             <span className="event-time">{moment(nextEvent.start).format("h:mma") + " - " + moment(nextEvent.end).format("h:mma")}</span> <span className="event-location">{nextEvent.location}</span>
                         </div>
-                        <Button className="event-rsvp" bsStyle="primary" bsSize="large" href={nextEvent.rsvpLink}>RSVP</Button>
+                        <Button className="event-rsvp" bsstyle="primary" bssize="large" href={nextEvent.rsvpLink}>RSVP</Button>
                     </div>
                 </div>
             </div>

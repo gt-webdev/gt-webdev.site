@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { BrowserRouter, IndexRoute, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Root from './components/Root/Root';
-import Home from './components/Home/Home';
-import Events from './components/Events/Events';
-import About from './components/About/About';
-import Connect from './components/Connect/Connect';
-import Privacy from './components/Privacy/Privacy';
+import Home from './pages/Home/Home';
+import Events from './pages/Events/Events';
+import About from './pages/About/About';
+import Connect from './pages/Connect/Connect';
+import Privacy from './pages/Privacy/Privacy';
 
 class App extends Component {
     render() {
@@ -14,7 +14,7 @@ class App extends Component {
             <BrowserRouter>
                 <Switch>
                     <Route path="/" component={Root}>
-                        <IndexRoute component={Home} />
+                        <Route exact path="/" component={Home} />
                         <Route path="events" component={Events} />
                         <Route path="about" component={About} />
                         <Route path="connect" component={Connect} />
