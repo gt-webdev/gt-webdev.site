@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {nextEvent} from '../../data/events.js';
 import {Button} from 'react-bootstrap';
 import moment from 'moment';
+import Menu from '../../components/Menu/Menu';
+import Footer from '../../components/Footer/Footer';
 
 class Home extends Component {
     componentWillMount() {
@@ -9,7 +11,8 @@ class Home extends Component {
     }
     render() {
         return (
-            <div className="home">
+            <div className="page-home home">
+                <Menu />
                 <div className="next-event">
                     <div className="container">
                         <div className="next-event-label">next event</div>
@@ -22,6 +25,7 @@ class Home extends Component {
                         <Button className="event-rsvp" bsstyle="primary" bssize="large" href={nextEvent.rsvpLink}>RSVP</Button>
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }

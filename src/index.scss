@@ -139,11 +139,11 @@ $footer-height:60px;
 	.next-event{
 		padding:80px 0;
 		text-align:center;
-		background:url(/img/home-event-bg.jpg) top center;
+		background:url(./img/home-event-bg.jpg) top center;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+1,0.65+99 */
-		background: -moz-radial-gradient(top center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url(/img/home-event-bg.jpg); /* FF3.6-15 */
-		background: -webkit-radial-gradient(top center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url(/img/home-event-bg.jpg); /* Chrome10-25,Safari5.1-6 */
-		background: radial-gradient(ellipse at top center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url(/img/home-event-bg.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background: -moz-radial-gradient(top center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url(./img/home-event-bg.jpg); /* FF3.6-15 */
+		background: -webkit-radial-gradient(top center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url(./img/home-event-bg.jpg); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at top center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url(./img/home-event-bg.jpg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		background-color:#000;
 		background-size:cover;
 		min-height:100vh;
@@ -253,7 +253,7 @@ $footer-height:60px;
 		background: linear-gradient(
 			rgba(0, 0, 0, 0.5),
 			rgba(0, 0, 0, 0.5)
-		), url("img/privacy-background.jpg") top center/cover;
+		), url("./img/privacy-background.jpg") top center/cover;
 		background-attachment:fixed;
 	}
 }
@@ -267,7 +267,7 @@ $footer-height:60px;
 		background: linear-gradient(
 			rgba(0, 0, 0, 0.5),
 			rgba(0, 0, 0, 0.5)
-		), url("img/about-background.jpg") top center/cover;
+		), url("./img/about-background.jpg") top center/cover;
 		background-attachment:fixed;
 	}
 
@@ -402,7 +402,7 @@ $footer-height:60px;
 		background: linear-gradient(
 			rgba(0, 0, 0, 0.5),
 			rgba(0, 0, 0, 0.5)
-		), url("img/connect-background.jpg") top center/cover;
+		), url("./img/connect-background.jpg") top center/cover;
 		background-attachment:fixed;
 	}
 

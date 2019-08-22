@@ -3,6 +3,8 @@ import {Button} from 'react-bootstrap';
 import moment from 'moment';
 import EventsList from '../../components/EventsList/EventsList.js';
 import {nextEvent, upcomingEvents, pastEvents} from '../../data/events.js';
+import Menu from '../../components/Menu/Menu';
+import Footer from '../../components/Footer/Footer';
 
 class Events extends Component {
     componentWillMount() {
@@ -10,7 +12,8 @@ class Events extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="page-events">
+                <Menu />
                 <div className="next-event">
                     <div className="container">
                         <div className="next-event-label">next meeting</div>
@@ -31,6 +34,7 @@ class Events extends Component {
                     <h2>Past Events</h2>
                     <EventsList events={pastEvents} />
                 </div>
+                <Footer />
             </div>
         );
     }

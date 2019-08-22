@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Menu from '../../components/Menu/Menu';
+import Footer from '../../components/Footer/Footer';
 
 class Connect extends Component {
     componentWillMount() {
@@ -23,7 +25,8 @@ class Connect extends Component {
             }
         ];
         return (
-            <div>
+            <div className="page-connect">
+                <Menu />
                 <div className="jumbotron" data-parallax-speed="40">
                     <h1>Connect with Us</h1>
                 </div>
@@ -45,6 +48,7 @@ class Connect extends Component {
                         );
                     })}
                 </div>
+                <Footer />
             </div>
         );
     }
