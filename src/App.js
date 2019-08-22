@@ -13,13 +13,12 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <Switch>
-                    <Route path="/" component={Root}>
-                        <Route exact path="/" component={Home} />
-                        <Route path="events" component={Events} />
-                        <Route path="about" component={About} />
-                        <Route path="connect" component={Connect} />
-                        <Route path="privacy" component={Privacy} />
-                    </Route>
+                    <Route path="/" component={Root}></Route>
+                    <Route exact path="/" component={Home} />
+                    <Route path="events" component={Events} />
+                    <Route path="about" component={About} />
+                    <Route path="connect" component={Connect} />
+                    <Route path="privacy" component={Privacy} />
                 </Switch>
             </BrowserRouter>
         );
